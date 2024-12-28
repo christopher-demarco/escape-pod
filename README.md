@@ -13,3 +13,6 @@ TODO:
 - [ ] Safely iterate over all Notes
 - [ ] Convert to Markdown with Pandoc
 - [ ] Run unattended
+
+Write markdown to an icloud folder that will be synced to all devices;
+it contains a git repo which I can then commit _
