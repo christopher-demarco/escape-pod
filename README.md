@@ -8,7 +8,7 @@ TODO:
 - [ ] Select output folder
 - [ ] Handle overwrite (flag? Separate ApplesScript to rotate output folder name?)
 - [ ] Handle multiple Notes windows open
-- [ ] Handle launching Notes and TextEdit
+- [x] Handle launching Notes and Pages
 - [ ] Handle (skip) locked Notes
 - [ ] Safely iterate over all Notes
 - [ ] Convert to Markdown with Pandoc
