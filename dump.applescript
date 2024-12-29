@@ -3,14 +3,14 @@
 use AppleScript version "2.4" -- Yosemite (10.10) or later
 use scripting additions
 
--- set notePath to (path to the documents folder) as string
+set notePath to (path to the documents folder) as string
 
 tell application "Notes"
 	activate
-	set theNote to note "Doctor"
+	set theNote to note "2022-09-04"
 	show theNote
 	set noteTitle to name of theNote
-	--set saveAs to notePath & noteTitle
+	set saveAs to notePath & noteTitle
 	--	display dialog saveAs
 	
 	tell application "System Events" to tell process "Notes"
@@ -20,8 +20,8 @@ tell application "Notes"
 		tell menu bar item "Edit" of menu bar 1
 			click
 			click menu item "Select All" of menu 1
-			delay 0.5
 		end tell
+		delay 0.5
 		tell menu bar item "Edit" of menu bar 1
 			click
 			click menu item "Copy" of menu 1
