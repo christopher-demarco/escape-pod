@@ -7,15 +7,16 @@ on run argv
 	set the text item delimiters to linefeed
 	set targetNoteTitle to argv as text
 	
-	set notePath to (path to the documents folder) as string
+	set documentsPath to (path to the documents folder) as string
+	set dumpFolder to documentsPath & "notes_dump"
 	
 	tell application "Notes"
 		activate
 		set theNote to note targetNoteTitle
 		show theNote
 		set noteTitle to name of theNote
-		set saveAs to notePath & noteTitle
-		--	display dialog saveAs
+		set saveAs to dumpFolder & ":" & noteTitle
+		--display dialog saveAs
 		
 		tell application "System Events" to tell process "Notes"
 			tell text area 1 of scroll area 2 of splitter group 1 of window "Notes"
