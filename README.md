@@ -3,14 +3,16 @@ Convert Apple Notes to Markdown!
 
 This is the only viable approach I could find. But it seems to work!
 
-2024-12-31 update: It mostly works, but the entire concept isn't really viable.
+### 2024-12-31 update
+
+It sorta works, but the entire concept isn't really viable.
 
 AppleScript is too brittle--Notes and Pages need to be in juuust the right state
 or it doesn't work. But the real fatal dealbreaker is that [Apple Notes does not
 make version
 backups](https://github.com/christopher-demarco/zettelkasten/blob/main/Apple%20Notes%20does%20not%20backup%20versions.md).
 
-TODO:
+## TODO:
 
 - [ ] Select output folder
 - [ ] Handle overwrite (flag? Separate script to rotate output folder name?)
